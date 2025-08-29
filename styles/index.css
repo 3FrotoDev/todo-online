@@ -1,0 +1,91 @@
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: #555555;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 transparent;
+  }
+  
+  /* Light mode scrollbar */
+  [data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: #000000;
+  }
+  
+  [data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+  }
+  
+  [data-theme="light"] ::-webkit-scrollbar-thumb:active {
+    background: #555555;
+  }
+  
+  /* Dark mode scrollbar */
+  [data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
+  
+  [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+  }
+  
+  [data-theme="dark"] ::-webkit-scrollbar-thumb:active {
+    background: #999999;
+  }
+  
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhanced theme transition effects */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Prevent horizontal scrolling during theme transitions */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Custom scrollbar for specific containers */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+    border-radius: 2px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }

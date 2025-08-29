@@ -10,7 +10,7 @@ export async function signupWithGoogle() {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: {
-      redirectTo: `https://todo-online-6om5.vercel.app/auth/callback`,
+      redirectTo: `${process.env.EXT_PUBLIC_SITE_URL ?? ""}/auth/callback`,
     },
   })
 

@@ -38,6 +38,70 @@ The application leverages several modern web technologies:
 - **CSS Modules**: For component-scoped styling
 - **Vercel**: For deployment and hosting
 
+### Project Structure
+
+```
+project-root/
+├── config/ # General project configurations
+├── styles/ # Global styling
+│ ├── globals.css # Global styles applied to the app
+│ └── index.css # Additional styles or imports
+├── types/ # TypeScript definitions and utilities
+│ ├── index.ts # Shared types and interfaces
+│ ├── utils/
+│ │ └── supabase/ # Supabase integration helpers
+│ │ ├── actions.ts # CRUD actions with Supabase
+│ │ ├── client.ts # Supabase client initialization
+│ │ ├── middleware.ts # Supabase middleware (auth/validation)
+│ │ └── server.ts # Server-side utilities for Supabase
+├── app/ # Next.js App Router (pages + APIs)
+│ ├── api/ # API endpoints
+│ │ ├── auth/ # Authentication routes
+│ │ │ └── callback/
+│ │ │ └── route.ts # Handles auth provider callbacks
+│ │ └── tasks/ # Task management APIs
+│ │ ├── [id]/complete/
+│ │ │ └── route.ts # Mark a specific task as complete
+│ │ └── route.ts # General tasks API (CRUD)
+│ ├── error.tsx # Global error page
+│ ├── login/page.tsx # Login page
+│ ├── page.tsx # Home/Dashboard page
+│ ├── layout.tsx # Root layout (shared UI, providers)
+│ └── providers.tsx # Global context providers (theme, auth, etc.)
+├── components/ # Reusable UI components
+│ ├── sub/
+│ │ ├── navbar.tsx # Top navigation bar
+│ │ └── sidebar.tsx # Sidebar navigation
+│ └── ui/
+│ ├── logoutModal.tsx # Logout confirmation modal
+│ ├── primitives.ts # Base reusable UI elements
+│ ├── ProgressCircle.tsx# Circular progress indicator
+│ ├── TaskCard.tsx # Task item card
+│ ├── TaskDrawer.tsx # Drawer for task details
+│ └── theme-switch.tsx # Light/Dark theme toggle
+├── public/ # Static assets
+│ ├── favicon.ico # App favicon
+│ ├── next.svg # Next.js logo (default)
+│ ├── todo_banner.jpg # Banner image for tasks
+│ ├── todo_icon.jpg # Icon for the to-do app
+│ └── vercel.svg # Vercel logo (default)
+├── .env # Environment variables (not committed)
+├── .gitignore # Git ignore rules
+├── eslint.config.mjs # ESLint configuration
+├── LICENSE # Project license
+├── middleware.ts # App-level middleware
+├── next-env.d.ts # Auto-generated Next.js TypeScript types
+├── next.config.js # Next.js configuration
+├── package.json # Project dependencies and scripts
+├── package-lock.json # Lockfile for dependency versions
+├── postcss.config.js # PostCSS configuration
+├── tailwind.config.js # TailwindCSS configuration
+├── tsconfig.json # TypeScript configuration
+├── SUPABASE_SETUP.md # Setup guide for Supabase integration
+├── supabase-schema.sql # SQL schema for Supabase database
+└── README.md # Project documentation
+```
+
 ### How to Run
 
 1. Clone the repository
@@ -102,3 +166,6 @@ Throughout CS50x, I've learned fundamental concepts like algorithms, data struct
 This final project combines everything I've learned, particularly from Week 8 (HTML, CSS, JavaScript) and Week 9 (Flask, Python). While the technologies used (Next.js, React) go beyond CS50x's curriculum, the core principles learned in the course - especially regarding problem-solving and writing clean, efficient code - were instrumental in building this application.
 
 I chose to create TODO because I wanted to solve a real-world problem while challenging myself with modern web technologies.
+
+
+

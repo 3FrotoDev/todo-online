@@ -42,7 +42,9 @@ The application leverages several modern web technologies:
 
 1. Clone the repository
 2. Install dependencies:
-
+3. Create a `.env.local` file in the project root and copy the content from `.env.example`.  
+   Then replace the placeholders with your actual Supabase credentials.
+   
 ```bash
 npm install
 ```
@@ -84,7 +86,7 @@ npm run start
 4. **User Interface and Responsiveness**
    - Styling the app with Tailwind was challenging, especially making it responsive.  
    - Over time, I improved my Tailwind usage and created a clean, modern UI.
-   - 
+
 ### Possible Future Improvements
 
 - User authentication system

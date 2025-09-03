@@ -1,53 +1,97 @@
-# Next.js & HeroUI Template
+# Todo List App
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+## CS50x Final Project 2025
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+By Ali Mousa (3froto)
 
-## Technologies Used
+### Video Demo: [Video Link](https://youtu.be/5DZdLwRXqNc)
+- **Project Title:** CheckMate
+- **Name:** Ali Osama Mousa
+- **Github & EDX username:** 3froto
+- **city and country:** Egypt
+- **Date:** 9/3/2025
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Project Description
 
-## How to Use
+CheckMate is a modern task management application built using Next.js and React. It allows users to efficiently organize and track their daily tasks with a clean, intuitive interface. The project demonstrates the culmination of skills learned in CS50x, particularly in web development and user interface design.
 
-### Use the template with create-next-app
+### Key Features
 
-To create a new project based on this template using `create-next-app`, run the following command:
+- Task Management: Create, edit, and delete tasks
+- Status Tracking: Mark tasks as complete or incomplete
+- Priority System: Organize tasks by importance level
+- Responsive Design: Works seamlessly on desktop and mobile devices
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+### Technical Implementation
 
-### Install dependencies
+The application leverages several modern web technologies:
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+- **Next.js 15**: For server-side rendering and routing
+- **React**: For building the user interface components
+- **Tailwind CSS**: For responsive and customizable styling
+- **HeroUI**: For pre-built UI components
+- **CSS Modules**: For component-scoped styling
+- **Vercel**: For deployment and hosting
+
+### How to Run
+
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Run the development server
+3. Build the app:
 
 ```bash
-npm run dev
+npm run build
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+4. Start the App:
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
+npm run start
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## License
+### Design Decisions
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+- Chose Next.js for its built-in performance optimizations and server-side rendering capabilities
+- Implemented Tailwind CSS for rapid UI development and consistent styling
+- Used HeroUI to maintain a professional look while reducing development time
+
+### Challenges Overcome
+
+1. **Authentication and User Management**
+   - This was my first time working with Supabase authentication, and I faced errors with session handling and user tokens.  
+   - I solved this by studying Supabase documentation and testing login/logout flows until they worked correctly.  
+
+2. **Task Organization (Today, Overdue, Upcoming)**
+   - At first, all tasks were mixed together and it was hard to filter them.  
+   - I learned to use date comparisons to decide if a task belongs to today, is overdue, or upcoming.  
+
+3. **Real-Time Updates and UI Refresh**
+   - Initially, tasks updated only after refreshing the page.  
+   - I solved this by re-fetching tasks from the API after every operation and updating the local state for smoother user experience.  
+
+4. **User Interface and Responsiveness**
+   - Styling the app with Tailwind was challenging, especially making it responsive.  
+   - Over time, I improved my Tailwind usage and created a clean, modern UI.
+   - 
+### Possible Future Improvements
+
+- User authentication system
+- Task categories and tags
+- Data persistence with a database
+
+### About the Developer
+
+My name is Ali Mousa, and I'm a CS50x student from Egypt. Prior to taking CS50x, I had alot of experince in programming. This course has been an incredible journey, starting from the basics of C programming and culminating in this web development project.
+
+Throughout CS50x, I've learned fundamental concepts like algorithms, data structures, and software design principles. The transition from C to Python, and then to web development with JavaScript, has given me a comprehensive understanding of different programming paradigms.
+
+This final project combines everything I've learned, particularly from Week 8 (HTML, CSS, JavaScript) and Week 9 (Flask, Python). While the technologies used (Next.js, React) go beyond CS50x's curriculum, the core principles learned in the course - especially regarding problem-solving and writing clean, efficient code - were instrumental in building this application.
+
+I chose to create TODO because I wanted to solve a real-world problem while challenging myself with modern web technologies.

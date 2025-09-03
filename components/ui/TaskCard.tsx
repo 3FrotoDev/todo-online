@@ -244,6 +244,7 @@ export default function TaskCard({ task, onToggleComplete, onRenew, onEdit, onDe
             </span>
           </Checkbox>
           
+          {/* 
           <div className="flex items-center gap-2">          
             {showRenewButton && onRenew && (
               <Tooltip content="Add to today's tasks">
@@ -259,7 +260,7 @@ export default function TaskCard({ task, onToggleComplete, onRenew, onEdit, onDe
                 </Button>
               </Tooltip>
             )}
-          </div>
+          </div>*/}
         </div>
       </CardFooter>
     </Card>

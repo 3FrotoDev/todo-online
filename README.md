@@ -5,7 +5,7 @@
 By Ali Mousa (3froto)
 
 ### Video Demo: [Video Link](https://youtu.be/5DZdLwRXqNc)
-- **Project Title:** CheckMate
+- **Project Title:** TODO
 - **Name:** Ali Osama Mousa
 - **Github & EDX username:** 3froto
 - **city and country:** Egypt

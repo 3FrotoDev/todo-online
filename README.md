@@ -13,7 +13,12 @@ By Ali Mousa (3froto)
 
 ## Project Description
 
-CheckMate is a modern task management application built using Next.js and React. It allows users to efficiently organize and track their daily tasks with a clean, intuitive interface. The project demonstrates the culmination of skills learned in CS50x, particularly in web development and user interface design.
+This is my final project for CS50.  
+It is a **To-Do App** that helps users manage their daily tasks.  
+The app allows users to create, edit, delete, and complete tasks.  
+Tasks are organized into three categories: **Today**, **Overdue**, and **Upcoming**.  
+
+The goal of this project is to practice full-stack development skills by combining **Next.js**, **Supabase**, and **TailwindCSS**.
 
 ### Key Features
 
